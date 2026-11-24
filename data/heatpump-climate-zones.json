@@ -1,0 +1,75 @@
+{
+  "dataset": "heatpump-climate-zones",
+  "version": "2026.1.0",
+  "updated_at": "2026-04-01",
+  "license": "CC-BY-4.0",
+  "reference_calculator": "https://calculpiscine.com/pompe-a-chaleur/",
+  "sources": [
+    "Méthode thermique de dimensionnement PAC piscine / thermopompe (FPP / norme NF EN 17645)",
+    "EDF / CRE Tarif Bleu 2026 (0,2001 €/kWh), ElCom Suisse (0,29 CHF/kWh), Hydro-Québec Tarif D (0,103 $ CA/kWh)"
+  ],
+  "seasons": [
+    {
+      "key": "standard",
+      "label": "Saison standard (mai à septembre · 150 jours)",
+      "days": 150,
+      "cMontee": 0.15
+    },
+    {
+      "key": "prolongee",
+      "label": "Saison prolongée (avril à octobre · 210 jours)",
+      "days": 210,
+      "cMontee": 0.18
+    }
+  ],
+  "zones": [
+    {
+      "key": "sud",
+      "label": "Zone Sud — PACA, Occitanie, Corse",
+      "shortLabel": "Zone Sud",
+      "kClimat": 0.85,
+      "cop": 5.0,
+      "hoursPerDay": 3.5,
+      "defaultElectricityKey": "fr_edf"
+    },
+    {
+      "key": "centre",
+      "label": "Zone Centre — Île-de-France, AuRA, Ouest, Suisse romande",
+      "shortLabel": "Zone Centre / CH",
+      "kClimat": 1.0,
+      "cop": 4.5,
+      "hoursPerDay": 4.5,
+      "defaultElectricityKey": "fr_edf"
+    },
+    {
+      "key": "nord",
+      "label": "Zone Nord — Hauts-de-France, Grand Est, Bretagne, Belgique",
+      "shortLabel": "Zone Nord / BE",
+      "kClimat": 1.15,
+      "cop": 4.0,
+      "hoursPerDay": 5.5,
+      "defaultElectricityKey": "fr_edf"
+    },
+    {
+      "key": "quebec",
+      "label": "Québec (CA) & Montagne (> 600 m)",
+      "shortLabel": "Québec / Montagne",
+      "kClimat": 1.25,
+      "cop": 3.8,
+      "hoursPerDay": 6.0,
+      "defaultElectricityKey": "qc_hq"
+    }
+  ],
+  "covers": {
+    "avec_bache": {
+      "label": "Avec bâche à bulles ou volet la nuit",
+      "kCouverture": 1.0,
+      "mCouverture": 1.0
+    },
+    "sans_bache": {
+      "label": "Sans couverture nocturne (bassin découvert)",
+      "kCouverture": 1.25,
+      "mCouverture": 1.5
+    }
+  }
+}

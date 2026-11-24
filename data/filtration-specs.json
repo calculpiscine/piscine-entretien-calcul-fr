@@ -1,0 +1,102 @@
+{
+  "dataset": "filtration-specs",
+  "version": "2026.1.0",
+  "updated_at": "2026-04-01",
+  "license": "CC-BY-4.0",
+  "reference_calculator": "https://calculpiscine.com/pompe-filtration/",
+  "sources": [
+    "Hydraulique piscine résidentielle : renouvellement complet en 4 h avec marge de pertes de charge +20 % (FPP / normes AFNOR NF P90)",
+    "Règle usuelle de durée de filtration quotidienne : T°C ÷ 2, hivernage actif ≥ 2 h/j sous 12 °C, continu 24 h/24 dès 30 °C"
+  ],
+  "turnoverHours": 4,
+  "hydraulicMargin": 1.2,
+  "bagWeightKg": 25,
+  "glassMassRatio": 0.8,
+  "gravelLayerRatio": 0.3,
+  "fineLayerRatio": 0.7,
+  "temperatureSchedule": [
+    { "waterTempC": 8, "hoursPerDay": 4.0, "mode": "hivernage", "note": "Hivernage actif (protection hors-gel)" },
+    { "waterTempC": 10, "hoursPerDay": 5.0, "mode": "hivernage", "note": "Hivernage actif (eau fraîche)" },
+    { "waterTempC": 12, "hoursPerDay": 6.0, "mode": "standard", "note": "Remise en route de printemps" },
+    { "waterTempC": 16, "hoursPerDay": 8.0, "mode": "standard", "note": "Mi-saison (règle T°C ÷ 2)" },
+    { "waterTempC": 20, "hoursPerDay": 10.0, "mode": "standard", "note": "Printemps / automne" },
+    { "waterTempC": 24, "hoursPerDay": 12.0, "mode": "standard", "note": "Début d'été" },
+    { "waterTempC": 26, "hoursPerDay": 13.0, "mode": "standard", "note": "Plein été standard" },
+    { "waterTempC": 28, "hoursPerDay": 14.0, "mode": "standard", "note": "Forte chaleur" },
+    { "waterTempC": 30, "hoursPerDay": 24.0, "mode": "canicule", "note": "Canicule : filtration continue 24 h/24 anti-algues" }
+  ],
+  "tiers": [
+    {
+      "id": "d400",
+      "maxFlowM3h": 6.0,
+      "diameterMm": 400,
+      "ratedFlowM3h": 6,
+      "sandKg": 50,
+      "sandBags": 2,
+      "glassKg": 40,
+      "glassBags": 2,
+      "pumpKw": 0.37,
+      "pumpCv": "0,5 CV"
+    },
+    {
+      "id": "d450",
+      "maxFlowM3h": 8.0,
+      "diameterMm": 450,
+      "ratedFlowM3h": 8,
+      "sandKg": 75,
+      "sandBags": 3,
+      "glassKg": 60,
+      "glassBags": 3,
+      "pumpKw": 0.55,
+      "pumpCv": "0,75 CV"
+    },
+    {
+      "id": "d500",
+      "maxFlowM3h": 11.0,
+      "diameterMm": 500,
+      "ratedFlowM3h": 11,
+      "sandKg": 100,
+      "sandBags": 4,
+      "glassKg": 80,
+      "glassBags": 4,
+      "pumpKw": 0.75,
+      "pumpCv": "1,0 CV"
+    },
+    {
+      "id": "d600",
+      "maxFlowM3h": 15.0,
+      "diameterMm": 600,
+      "ratedFlowM3h": 15,
+      "sandKg": 150,
+      "sandBags": 6,
+      "glassKg": 120,
+      "glassBags": 5,
+      "pumpKw": 1.1,
+      "pumpCv": "1,5 CV"
+    },
+    {
+      "id": "d750",
+      "maxFlowM3h": 22.0,
+      "diameterMm": 750,
+      "ratedFlowM3h": 22,
+      "sandKg": 250,
+      "sandBags": 10,
+      "glassKg": 200,
+      "glassBags": 8,
+      "pumpKw": 1.5,
+      "pumpCv": "2,0 CV"
+    },
+    {
+      "id": "d900",
+      "maxFlowM3h": 999.0,
+      "diameterMm": 900,
+      "ratedFlowM3h": 30,
+      "sandKg": 350,
+      "sandBags": 14,
+      "glassKg": 280,
+      "glassBags": 12,
+      "pumpKw": 2.2,
+      "pumpCv": "3,0 CV"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "dataset": "chemistry-dosage-rules",
+  "version": "2026.1.0",
+  "updated_at": "2026-04-01",
+  "license": "CC-BY-4.0",
+  "reference_calculator": "https://calculpiscine.com/dosage-eau/",
+  "sources": [
+    "Équilibre acido-basique HOCl / ClO- (équation de Henderson-Hasselbalch, pKa = 7,50 à 25 °C)",
+    "Fédération des Professionnels de la Piscine et du Spa (FPP) — bonnes pratiques d'équilibre de l'eau",
+    "Norme européenne NF EN 16401 (sel pour électrolyseur de piscine, sacs de 25 kg)"
+  ],
+  "chlorine": {
+    "shockGPerM3": 20,
+    "shockTabletG": 20,
+    "slowGPerM3PerWeek": 10,
+    "slowGaletG": 200,
+    "adjustGPerM3PerMgL": 1.8,
+    "freeChlorineOptimalMinMgL": 0.5,
+    "freeChlorineOptimalMaxMgL": 2.0
+  },
+  "ph": {
+    "pKa25C": 7.5,
+    "phMinusGPerM3Per01": 15,
+    "phPlusGPerM3Per01": 10,
+    "optimalMin": 7.0,
+    "optimalMax": 7.4,
+    "alertHigh": 7.8,
+    "maxStepPerDose": 0.2
+  },
+  "salt": {
+    "bagWeightKg": 25,
+    "recommendedMinGL": 3.0,
+    "recommendedDefaultGL": 4.0,
+    "recommendedMaxGL": 5.0
+  }
+}

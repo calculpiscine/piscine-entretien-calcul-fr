@@ -1,0 +1,12 @@
+group,parameter,value,unit,target_min,target_max,notes
+chlorine,shock_dosage,20,g/m3,,,Traitement choc standard (pastilles de 20 g)
+chlorine,shock_tablet_weight,20,g,,,Masse unitaire d'une pastille de chlore choc
+chlorine,slow_maintenance_weekly,10,g/m3/semaine,0.5,2.0,Traitement d'entretien hebdomadaire (galets de 200 g)
+chlorine,slow_galet_weight,200,g,,,Masse unitaire d'un galet de chlore lent
+chlorine,adjust_powder_56pct,1.8,g/m3/(mg/L),0.5,2.0,Poudre chlore actif 56 % pour remonter le taux de +1 mg/L
+ph,hocl_pka_25c,7.5,pH,7.0,7.4,Constante pKa du couple HOCl/ClO- à 25 °C
+ph,ph_minus_coeff,15,g/m3/0.1pH,7.0,7.4,Correcteur pH- standard (paliers max de 0.2 unité pH)
+ph,ph_plus_coeff,10,g/m3/0.1pH,7.0,7.4,Correcteur pH+ standard (paliers max de 0.2 unité pH)
+ph,alert_high_threshold,7.8,pH,7.0,7.4,À pH 7.8 l'efficacité du chlore actif (HOCl) chute à 33.4 %
+salt,electrolyzer_salinity,4.0,g/L,3.0,5.0,Taux de sel recommandé norme NF EN 16401
+salt,bag_weight,25,kg,,,Conditionnement standard en sac de sel piscine 25 kg

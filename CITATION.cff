@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "piscine-entretien-calcul-fr : Moteur de calcul et référentiel 2026 d'entretien piscine (FR/BE/CH/CA)"
+message: "Si vous utilisez ce moteur de calcul ou les jeux de données 2026, merci de citer ce dépôt."
+type: software
+version: "2026.1.0"
+date-released: "2026-04-01"
+license: MIT
+authors:
+  - name: "CalculPiscine Maintainers"
+    website: "https://calculpiscine.com"
+repository-code: "https://github.com/calculpiscine/piscine-entretien-calcul-fr"
+url: "https://calculpiscine.com"
+keywords:
+  - piscine
+  - swimming-pool
+  - pompe-a-chaleur
+  - filtration
+  - water-chemistry
+  - pool-calculator
+  - open-data
+  - france
+  - quebec
+abstract: >-
+  Bibliothèque JavaScript ESM sans dépendance et jeux de données ouverts 2026
+  pour le calcul du volume de piscine, du dosage chlore/pH/sel (efficacité HOCl),
+  du dimensionnement pompe/filtre et de la puissance de pompe à chaleur
+  (thermopompe) en France, Belgique, Suisse romande et Québec.

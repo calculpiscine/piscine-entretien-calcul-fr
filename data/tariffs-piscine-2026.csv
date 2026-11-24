@@ -1,0 +1,8 @@
+category,key,country,label,price,unit,currency_code,updated_at,source,reference_calculator
+electricity,fr_edf,FR,France — EDF Tarif Bleu Base 2026,0.2001,EUR/kWh,EUR,2026-04-01,EDF / CRE Tarif Bleu Option Base TTC 2026,https://calculpiscine.com
+electricity,be_ref,BE,Belgique — Référence résidentielle,0.32,EUR/kWh,EUR,2026-04-01,Moyenne tarifaire résidentielle Belgique 2026,https://calculpiscine.com
+electricity,ch_ref,CH,Suisse romande — Référence ElCom,0.29,CHF/kWh,CHF,2026-04-01,Référence moyenne ElCom Suisse romande 2026,https://calculpiscine.com
+electricity,qc_hq,CA-QC,Québec — Hydro-Québec Tarif D (tranche 2),0.103,CAD/kWh,CAD,2026-04-01,Hydro-Québec Tarif D 2026 (tranche 2),https://calculpiscine.com
+water,fr_sispea_complet,FR,France — SISPEA eau + assainissement,4.89,EUR/m3,EUR,2026-04-01,Observatoire national SISPEA / OFB (2.50 EUR eau potable + 2.39 EUR assainissement collectif),https://calculpiscine.com
+water,fr_sispea_eau_seule,FR,France — Assainissement non collectif / eau seule,2.5,EUR/m3,EUR,2026-04-01,Observatoire national SISPEA — part eau potable seule,https://calculpiscine.com
+water,be_ch_ref,BE/CH,Belgique / zone dense,5.6,EUR/m3,EUR,2026-04-01,Tarif moyen constaté eau + assainissement en zone urbaine,https://calculpiscine.com

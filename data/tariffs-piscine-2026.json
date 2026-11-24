@@ -1,0 +1,143 @@
+{
+  "dataset": "tariffs-piscine-2026",
+  "version": "2026.1.0",
+  "year": 2026,
+  "updated_at": "2026-04-01",
+  "license": "CC-BY-4.0",
+  "reference_calculator": "https://calculpiscine.com",
+  "sources": [
+    {
+      "id": "edf_cre_2026",
+      "region": "FR",
+      "name": "EDF / CRE — Tarif Bleu Option Base TTC 2026",
+      "metric": "electricity_price",
+      "value": 0.2001,
+      "unit": "EUR/kWh"
+    },
+    {
+      "id": "be_res_2026",
+      "region": "BE",
+      "name": "Moyenne tarifaire résidentielle Belgique 2026",
+      "metric": "electricity_price",
+      "value": 0.32,
+      "unit": "EUR/kWh"
+    },
+    {
+      "id": "elcom_ch_2026",
+      "region": "CH",
+      "name": "ElCom — Référence moyenne Suisse romande 2026",
+      "metric": "electricity_price",
+      "value": 0.29,
+      "unit": "CHF/kWh"
+    },
+    {
+      "id": "hydro_quebec_2026",
+      "region": "CA-QC",
+      "name": "Hydro-Québec — Tarif D 2026 (tranche 2)",
+      "metric": "electricity_price",
+      "value": 0.103,
+      "unit": "CAD/kWh"
+    },
+    {
+      "id": "sispea_ofb_2026",
+      "region": "FR",
+      "name": "Observatoire national SISPEA / OFB — Prix moyen eau potable + assainissement collectif",
+      "metric": "water_price",
+      "value": 4.89,
+      "unit": "EUR/m3"
+    },
+    {
+      "id": "code_urbanisme_fr",
+      "region": "FR",
+      "name": "Code de l'urbanisme art. R*421-2, R*421-9 et R*421-1",
+      "metric": "pool_permit_thresholds_m2",
+      "value": "10 / 100",
+      "unit": "m2"
+    }
+  ],
+  "electricity": {
+    "defaultKey": "fr_edf",
+    "presets": [
+      {
+        "key": "fr_edf",
+        "country": "FR",
+        "label": "France — EDF Tarif Bleu Base 2026 (0,2001 €/kWh)",
+        "shortLabel": "EDF Base 2026",
+        "price": 0.2001,
+        "currency": "€",
+        "currencyCode": "EUR",
+        "source": "EDF / CRE Tarif Bleu Option Base TTC 2026"
+      },
+      {
+        "key": "be_ref",
+        "country": "BE",
+        "label": "Belgique — Référence résidentielle (0,32 €/kWh)",
+        "shortLabel": "Belgique réf.",
+        "price": 0.32,
+        "currency": "€",
+        "currencyCode": "EUR",
+        "source": "Moyenne tarifaire résidentielle Belgique 2026"
+      },
+      {
+        "key": "ch_ref",
+        "country": "CH",
+        "label": "Suisse romande — Référence ElCom (0,29 CHF/kWh)",
+        "shortLabel": "Suisse ElCom",
+        "price": 0.29,
+        "currency": "CHF",
+        "currencyCode": "CHF",
+        "source": "Référence moyenne ElCom Suisse romande 2026"
+      },
+      {
+        "key": "qc_hq",
+        "country": "CA-QC",
+        "label": "Québec — Hydro-Québec Tarif D (0,103 $/kWh)",
+        "shortLabel": "Hydro-Québec",
+        "price": 0.103,
+        "currency": "$ CA",
+        "currencyCode": "CAD",
+        "source": "Hydro-Québec Tarif D 2026 (tranche 2)"
+      }
+    ]
+  },
+  "water": {
+    "defaultKey": "fr_sispea_complet",
+    "presets": [
+      {
+        "key": "fr_sispea_complet",
+        "country": "FR",
+        "label": "France — SISPEA eau + assainissement (4,89 €/m³)",
+        "shortLabel": "SISPEA 4,89 €/m³",
+        "price": 4.89,
+        "currency": "€",
+        "currencyCode": "EUR",
+        "source": "Observatoire national SISPEA / OFB (2,50 € eau potable + 2,39 € assainissement collectif)"
+      },
+      {
+        "key": "fr_sispea_eau_seule",
+        "country": "FR",
+        "label": "Assainissement non collectif / eau seule (2,50 €/m³)",
+        "shortLabel": "Eau seule 2,50 €/m³",
+        "price": 2.5,
+        "currency": "€",
+        "currencyCode": "EUR",
+        "source": "Observatoire national SISPEA — part eau potable seule"
+      },
+      {
+        "key": "be_ch_ref",
+        "country": "BE/CH",
+        "label": "Belgique / zone dense (5,60 €/m³)",
+        "shortLabel": "Zone dense 5,60 €/m³",
+        "price": 5.6,
+        "currency": "€",
+        "currencyCode": "EUR",
+        "source": "Tarif moyen constaté eau + assainissement en zone urbaine"
+      }
+    ]
+  },
+  "urbanisme": {
+    "dispenseMaxM2": 10,
+    "dpMaxM2": 100,
+    "source": "Code de l'urbanisme art. R*421-2, R*421-9 et R*421-1"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "piscine-entretien-calcul-fr",
+  "version": "2026.1.0",
+  "description": "Moteur de calcul et jeux de données 2026 pour l'entretien de piscine (volume, chlore/pH/sel, filtration, pompe à chaleur) — FR, BE, CH et Québec.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./data/tariffs-piscine-2026.json": "./data/tariffs-piscine-2026.json",
+    "./data/chemistry-dosage-rules.json": "./data/chemistry-dosage-rules.json",
+    "./data/filtration-specs.json": "./data/filtration-specs.json",
+    "./data/heatpump-climate-zones.json": "./data/heatpump-climate-zones.json"
+  },
+  "files": [
+    "src/",
+    "data/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "CITATION.cff"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "homepage": "https://calculpiscine.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calculpiscine/piscine-entretien-calcul-fr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/calculpiscine/piscine-entretien-calcul-fr/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "piscine",
+    "entretien-piscine",
+    "volume-piscine",
+    "chlore",
+    "ph",
+    "electrolyse-sel",
+    "filtration-piscine",
+    "pompe-a-chaleur",
+    "thermopompe",
+    "swimming-pool",
+    "pool-calculator",
+    "water-chemistry",
+    "heat-pump",
+    "open-data",
+    "france",
+    "quebec"
+  ]
+}

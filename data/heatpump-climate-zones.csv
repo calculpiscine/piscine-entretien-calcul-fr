@@ -1,0 +1,5 @@
+zone_key,zone_label,k_climat,cop_saisonnier,heures_par_jour,tarif_elec_defaut,saison_standard_jours,c_montee_standard,saison_prolongee_jours,c_montee_prolongee,k_sans_bache,m_conso_sans_bache
+sud,Zone Sud — PACA / Occitanie / Corse,0.85,5.0,3.5,fr_edf,150,0.15,210,0.18,1.25,1.5
+centre,Zone Centre — Île-de-France / AuRA / Ouest / Suisse romande,1.0,4.5,4.5,fr_edf,150,0.15,210,0.18,1.25,1.5
+nord,Zone Nord — Hauts-de-France / Grand Est / Bretagne / Belgique,1.15,4.0,5.5,fr_edf,150,0.15,210,0.18,1.25,1.5
+quebec,Québec (CA) & Montagne (> 600 m),1.25,3.8,6.0,qc_hq,150,0.15,210,0.18,1.25,1.5

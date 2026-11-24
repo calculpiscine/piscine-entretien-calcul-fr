@@ -1,0 +1,10 @@
+water_temp_c,hours_per_day,mode,rule,note
+8,4.0,hivernage,max(2h; T/2),Hivernage actif (protection hors-gel)
+10,5.0,hivernage,max(2h; T/2),Hivernage actif (eau fraîche)
+12,6.0,standard,T/2,Remise en route de printemps
+16,8.0,standard,T/2,Mi-saison
+20,10.0,standard,T/2,Printemps / automne
+24,12.0,standard,T/2,Début d'été
+26,13.0,standard,T/2,Plein été standard
+28,14.0,standard,T/2,Forte chaleur
+30,24.0,canicule,24h/24,Canicule : filtration continue anti-algues
