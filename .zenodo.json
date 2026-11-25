@@ -1,0 +1,58 @@
+{
+  "title": "Residential Swimming Pool Maintenance 2026 Open Dataset & Engine (Volume, Chlorine/pH/Salt HOCl Chemistry, Filtration & Heat Pump)",
+  "upload_type": "dataset",
+  "publication_date": "2026-11-24",
+  "version": "2026.1.0",
+  "language": "fra",
+  "description": "Open 2026 reference datasets (JSON/CSV) and zero-dependency ESM JavaScript calculation formulas published by CalculPiscine (calculpiscine.com) for France, Belgium, Switzerland, and Quebec (SISPEA water tariffs, EDF Tarif Bleu electricity rates). Covers pool volume by geometry (https://calculpiscine.com/volume/fond-compose/), water treatment dosing for chlorine, pH, and salt (https://calculpiscine.com/dosage-eau/), green-water shock recovery (https://calculpiscine.com/dosage/eau-verte/), filtration sizing, and heat pump power estimation.",
+  "creators": [
+    {
+      "name": "CalculPiscine Maintainers",
+      "type": "Organization",
+      "affiliation": "CalculPiscine"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "piscine",
+    "swimming-pool",
+    "pompe-a-chaleur",
+    "filtration",
+    "water-chemistry",
+    "pool-calculator",
+    "france",
+    "quebec",
+    "open-data",
+    "javascript",
+    "thermopompe",
+    "calculpiscine.com",
+    "2026"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://calculpiscine.com/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://calculpiscine.com/dosage-eau/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://calculpiscine.com/volume/fond-compose/",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/calculpiscine/piscine-entretien-calcul-fr",
+      "relation": "isDerivedFrom",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}
